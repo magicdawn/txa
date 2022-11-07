@@ -4,6 +4,7 @@ import envPaths from 'env-paths'
 import esbuild from 'esbuild'
 import execa from 'execa'
 import path from 'path'
+import { performance } from 'perf_hooks'
 
 const debug = d('txa:helper')
 
@@ -24,6 +25,7 @@ export async function bundle(
   }
   debug('bundle %s -> %s', file, outFile)
 
+  const start = performance.now()
   const buildResult = await esbuild.build({
     entryPoints: [file],
     bundle: true,
@@ -31,6 +33,8 @@ export async function bundle(
     platform: 'neutral',
     target: 'ES2020',
   })
+  const cost = (performance.now() - start).toFixed(0)
+  debug('esbuild cost %s ms', cost)
 
   return outFile
 }
