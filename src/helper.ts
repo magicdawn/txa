@@ -39,8 +39,8 @@ export async function bundle(
   return outFile
 }
 
-export async function exec(jsfile: string) {
-  const childProcess = execa('osascript', ['-l', 'JavaScript', jsfile], {
+export async function exec(jsfile: string, extraArgs: string[] = []) {
+  const childProcess = execa('osascript', ['-l', 'JavaScript', jsfile, ...extraArgs], {
     reject: false,
   })
 

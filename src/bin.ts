@@ -15,7 +15,11 @@ yargs
     },
     async (argv) => {
       const jsfile = await bundle(argv.file)
-      await exec(jsfile)
+
+      // argv = [node, txa, <file>, ...extra]
+      // extra should pass to `osascript`
+      const extraArgs = process.argv.slice(3)
+      await exec(jsfile, extraArgs)
     }
   )
   .command(
