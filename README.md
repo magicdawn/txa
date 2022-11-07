@@ -1,7 +1,8 @@
 # txa
 
 > TypeScript for Automation, aka `osascript -l TypeScript` <br />
-> JXA is "JavaScript for Automation", so TXA is "TypeScript for Automation"
+>
+> TXA means "TypeScript for Automation" just like [JXA](https://github.com/JXA-Cookbook/JXA-Cookbook/wiki): "JavaScript for Automation"
 
 [![Build Status](https://img.shields.io/travis/magicdawn/txa.svg?style=flat-square)](https://travis-ci.org/magicdawn/txa)
 [![Coverage Status](https://img.shields.io/codecov/c/github/magicdawn/txa.svg?style=flat-square)](https://codecov.io/gh/magicdawn/txa)
