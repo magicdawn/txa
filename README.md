@@ -1,6 +1,6 @@
 # txa
 
-> TypeScript for Automation, aka `osascript -l TypeScript`
+> TypeScript for Automation, aka `osascript -l TypeScript` <br />
 > JXA is "JavaScript for Automation", so TXA is "TypeScript for Automation"
 
 [![Build Status](https://img.shields.io/travis/magicdawn/txa.svg?style=flat-square)](https://travis-ci.org/magicdawn/txa)
@@ -50,12 +50,6 @@ then use `reference` so you get editor intellisense
 
 ```js
 /* eslint-env applescript */
-```
-
-## API
-
-```js
-const txa = require('txa')
 ```
 
 ## Changelog
