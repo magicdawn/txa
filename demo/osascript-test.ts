@@ -1,6 +1,6 @@
 #!/usr/bin/env txa
 
-/* eslint-env applescript */
+// /* eslint-env applescript */
 /// <reference types='@jxa/global-type' />
 
 import { basename, isFile } from './helper'
