@@ -1,6 +1,4 @@
 #!/usr/bin/env txa
-
-// /* eslint-env applescript */
 /// <reference types='@jxa/global-type' />
 
 import { basename, isFile } from './helper'
@@ -43,6 +41,7 @@ function moveFileTo(file: string, dir: string) {
 globalThis.keep = run
 
 function run(input: PathType[], parameters: unknown) {
+  if (!input?.length) return
   processFile(input)
   app.displayNotification('success')
 }

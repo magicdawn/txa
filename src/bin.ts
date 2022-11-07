@@ -1,7 +1,7 @@
+import fse from 'fs-extra'
 import path from 'path'
 import yargs from 'yargs'
 import { bundle, exec } from './helper'
-import fse from 'fs-extra'
 
 yargs
   .scriptName('txa')
