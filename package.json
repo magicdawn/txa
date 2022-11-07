@@ -18,7 +18,8 @@
     "prepare": "husky install",
     "test": "jest --coverage",
     "build": "rm -rf lib; rm tsconfig.tsbuildinfo; tsc",
-    "prepublishOnly": "npm run build"
+    "prepublishOnly": "npm run build",
+    "demo:build": "txa build ./demo/demo.ts ./demo/dist"
   },
   "repository": {
     "type": "git",
