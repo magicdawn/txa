@@ -43,11 +43,10 @@ function moveFileTo(file: string, dir: string) {
 globalThis.keep = run
 
 function run(input: PathType[], parameters: unknown) {
-  console.log(11111)
   processFile(input)
   app.displayNotification('success')
 }
 
-console.log(1)
+// console.log(1)
 // processFile([Path(getPathFinderSelected())])
 // getPathFinderSelected()

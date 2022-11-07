@@ -12,3 +12,6 @@ coverage.*
 # ts
 **/*.tsbuildinfo
 /lib
+
+# demo compiled
+**/dist
