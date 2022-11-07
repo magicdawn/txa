@@ -1,14 +1,18 @@
 {
   "name": "txa",
   "version": "0.0.1",
-  "description": "osascript -l TypeScript",
+  "description": "TypeScript for Automation, aka osascript -l TypeScript",
   "main": "index.js",
   "bin": {
     "txa": "./bin/txa"
   },
   "files": [
     "lib",
-    "bin/txa"
+    "bin/txa",
+    "package.json",
+    "README.md",
+    "CHANGELOG.md",
+    "LICENSE"
   ],
   "scripts": {
     "test": "mocha",
