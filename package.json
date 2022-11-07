@@ -68,7 +68,6 @@
     "env-paths": "2",
     "esbuild": "^0.15.13",
     "execa": "5",
-    "get-stream": "6",
     "yargs": "^17.6.2"
   }
 }

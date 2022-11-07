@@ -16,7 +16,6 @@ specifiers:
   eslint: ^8.27.0
   eslint-config-prettier: ^8.5.0
   execa: '5'
-  get-stream: '6'
   husky: ^8.0.1
   lint-staged: ^13.0.3
   mocha: ^6.2.3
@@ -32,7 +31,6 @@ dependencies:
   env-paths: 2.2.1
   esbuild: 0.15.13
   execa: 5.1.1
-  get-stream: 6.0.1
   yargs: 17.6.2
 
 devDependencies:
