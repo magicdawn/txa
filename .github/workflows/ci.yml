@@ -20,5 +20,6 @@ jobs:
 
       - run: pnpm install
 
-      - run: pnpm test-cover
+      - run: pnpm test
+
       - uses: codecov/codecov-action@v3

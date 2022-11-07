@@ -16,8 +16,7 @@
   ],
   "scripts": {
     "prepare": "husky install",
-    "test": "jest",
-    "test-cover": "jest --coverage",
+    "test": "jest --coverage",
     "build": "rm -rf lib; rm tsconfig.tsbuildinfo; tsc",
     "prepublishOnly": "npm run build"
   },
