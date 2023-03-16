@@ -3,6 +3,7 @@ import d from 'debug'
 import envPaths from 'env-paths'
 import esbuild from 'esbuild'
 import execa from 'execa'
+import fs from 'fs'
 import path from 'path'
 import { performance } from 'perf_hooks'
 
@@ -35,6 +36,20 @@ export async function bundle(
   })
   const cost = (performance.now() - start).toFixed(0)
   debug('esbuild cost %s ms', cost)
+
+  // remove shebang after build
+  {
+    let contents = fs.readFileSync(outFile, 'utf8')
+    const lines = contents.split('\n')
+    const validLines = lines.filter(Boolean).filter((line) => !line.startsWith('//'))
+
+    if (validLines[0].startsWith('#!')) {
+      const index = lines.indexOf(validLines[0])
+      lines.splice(index, 1)
+      contents = lines.join('\n')
+      fs.writeFileSync(outFile, contents)
+    }
+  }
 
   return outFile
 }
